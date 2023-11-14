@@ -1,0 +1,159 @@
+.hero-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.hero-left,
+.hero-right {
+  width: 50%;
+  height: 100%;
+  background-image: url("../assets/img-1.png");
+  background-clip: border-box;
+  background-size: cover;
+  background-position: 100%;
+}
+
+.color-overlay {
+  background-color: rgba(40, 238, 167, 0.93);
+  height: 100%;
+  animation: changeColor 14s infinite ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@keyframes changeColor {
+  0% {
+    background-color: rgba(40, 238, 167, 0.93);
+  }
+  50% {
+    background-color: rgba(251, 80, 142, 0.93);
+  }
+  75% {
+    background-color: rgba(152, 100, 218, 0.93);
+  }
+  100% {
+    background-color: rgba(40, 238, 167, 0.93);
+  }
+}
+
+.hero-left-content-wrapper,
+.hero-right-content-wrapper {
+  width: 63%;
+  text-align: end;
+  margin: 15px 50px 0 50px;
+  color: rgb(255, 255, 255);
+}
+
+.hero-left-title,
+.hero-right-title {
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  line-height: 1;
+}
+
+.fixed-h1,
+.title-1 {
+  font-size: 22px;
+  padding: 0 10px;
+  width: auto;
+  background-color: #363738;
+  line-height: 1.5;
+}
+
+.transition-h1,
+.question {
+  font-size: 36px;
+  padding: 15px 0 0 0;
+}
+
+.hero-left-description,
+.hero-right-description {
+  margin: 40px 0 80px 0;
+  font-size: 16px;
+  font-weight: 100;
+  min-height: 10ch;
+  line-height: 1.5;
+}
+
+.get-trained-link,
+.hire-link {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 16px;
+  color: rgb(252, 252, 252);
+  padding: 10px 17px;
+  background-color: #232323;
+}
+
+.hero-right {
+  background-image: linear-gradient(rgba(35, 35, 35, 0.85), rgba(35, 35, 35, 0.85)), url("../assets/img-2.png");
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-right-content-wrapper {
+  text-align: start;
+}
+
+.hero-right-title {
+  font-weight: 1000;
+  line-height: 1;
+  align-items: start;
+}
+
+.title-1 {
+  color: #363738;
+  background-color: white;
+  line-height: 1.5;
+  font-weight: 1000;
+}
+
+.hire-link {
+  color: #363738;
+  background-color: #ffffff;
+}
+
+.nav-components,
+.menu-nav {
+  height: 50px;
+  width: 63%;
+  display: flex;
+  position: absolute;
+  top: 70px;
+  bottom: auto;
+  left: 18%;
+  justify-content: space-between;
+}
+
+.hamburger-menu {
+  align-self: center;
+  background-color: #363738;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu-btn-image {
+  width: 35px;
+  height: 35px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  backdrop-filter: blur(10px);
+  background-color: #232323e6;
+  height: 100vh;
+  z-index: 99;
+}
