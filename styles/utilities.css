@@ -14,17 +14,9 @@ body {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  font-family: Noto Sans Mono, sans-serif;
+  font-family: Noto Sans, sans-serif;
   height: 100vh;
+  color: #363738;
   /* position: absolute; */
   /* width: 100vw; */
-}
-
-.nav-components {
-  height: 50px;
-  display: flex;
-  position: absolute;
-  top: 70px;
-  bottom: auto;
-  left: 18%;
 }
