@@ -13,6 +13,7 @@ img {
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   overflow-y: scroll;
   font-family: Noto Sans, sans-serif;
   color: #363738;
