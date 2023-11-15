@@ -1,6 +1,8 @@
+/* **********HERO SECTION START********** */
+
 .hero-section {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   position: relative;
 }
@@ -40,9 +42,15 @@
 
 .hero-left-content-wrapper,
 .hero-right-content-wrapper {
-  width: 63%;
-  text-align: end;
-  margin: 15px 50px 0 50px;
+  width: 50%;
+  text-align: right;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin: 0px 50px 0 50px;
+  padding-top: 20px;
   color: rgb(255, 255, 255);
 }
 
@@ -86,6 +94,8 @@
   font-size: 16px;
   color: rgb(252, 252, 252);
   padding: 10px 17px;
+  width: 150px;
+
   background-color: #232323;
 }
 
@@ -99,6 +109,8 @@
 
 .hero-right-content-wrapper {
   text-align: start;
+  height: 100%;
+  align-items: start;
 }
 
 .hero-right-title {
@@ -277,4 +289,76 @@
 
 .hr-content-text {
   font-size: 12px;
+}
+
+/* **********HERO SECTION END********** */
+
+/* **********HELLO-WORLD SECTION START********** */
+
+.hello-world {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 70px 0;
+  background-color: #f1f2f3;
+}
+
+.section-title {
+  display: flex;
+  width: 60%;
+  justify-content: start;
+  font-size: 36px;
+  font-family: Noto Sans Mono, sans-serif;
+  align-items: center;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.section-title-pointer {
+  color: #28eea7;
+  font-weight: bolder;
+  padding: 5px 0px 5px 15px;
+}
+
+.sectino-title-text {
+  font-size: 24px;
+  padding: 0px 0px 0px 20px;
+}
+
+.circle-colored-icons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.circle-icon-black,
+.circle-icon-grey,
+.circle-icon-green {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #363738;
+}
+
+.circle-icon-grey {
+  background-color: #dcdee1;
+}
+
+.circle-icon-green {
+  background-color: #28eea7;
+}
+
+.youtube {
+  width: 60%;
+  height: 100%;
+  border: 15px solid #28eea7;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.youtube iframe {
+  width: 100%;
+  height: 100%;
 }

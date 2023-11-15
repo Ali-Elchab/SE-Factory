@@ -15,7 +15,6 @@ body {
   flex-direction: column;
   overflow-y: scroll;
   font-family: Noto Sans, sans-serif;
-  height: 100vh;
   color: #363738;
   /* position: absolute; */
   /* width: 100vw; */
