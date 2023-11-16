@@ -596,13 +596,13 @@ section {
 }
 
 .section-content-wrapper {
-  max-width: 1375px;
+  max-width: 1340px;
   height: 500px;
   display: block;
   width: 63%;
-  gap: 35px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
 }
 
 .rec-partner {
@@ -747,3 +747,65 @@ section {
 .prof-loc {
   padding-top: 5px;
 }
+/* **********TESTIMONIALS TALENT SECTION END********** */
+
+/* **********FAQS TALENT SECTION START********** */
+.faqs {
+  background-color: #363738;
+  color: #f1f2f3;
+}
+.faqs > .section-content-wrapper {
+  height: auto;
+}
+.faq-dropdown {
+  padding: 25px 40px 0 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: #232323;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.faq-question {
+  font-size: 14px;
+  font-weight: 900;
+  width: 100%;
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.faqs > .section-title > .circle-colored-icons > .circle-icon-black {
+  background-color: #ffffff;
+}
+
+.faq-question spam {
+  padding: 0 15px;
+}
+
+.drop-arrow {
+  font-size: large;
+  margin-left: auto;
+  transform: rotate(90deg);
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px 15px;
+  color: #dcdee1;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.faq-answer ul {
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+.faq-view-all {
+  background-color: #232323;
+  padding: 15px 20px;
+  margin-top: 24px;
+  text-align: end;
+  font-weight: 900;
+}
+/* **********FAQS TALENT SECTION ENDS********** */
