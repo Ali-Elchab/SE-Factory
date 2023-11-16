@@ -655,7 +655,7 @@ section {
 }
 /* **********HIRE TALENT SECTION END********** */
 
-/* **********TESTIMONIALS TALENT SECTION START********** */
+/* **********TESTIMONIALS SECTION START********** */
 .testimonials {
   display: block;
 }
@@ -747,9 +747,9 @@ section {
 .prof-loc {
   padding-top: 5px;
 }
-/* **********TESTIMONIALS TALENT SECTION END********** */
+/* **********TESTIMONIALS SECTION END********** */
 
-/* **********FAQS TALENT SECTION START********** */
+/* **********FAQS SECTION START********** */
 .faqs {
   background-color: #363738;
   color: #f1f2f3;
@@ -808,4 +808,100 @@ section {
   text-align: end;
   font-weight: 900;
 }
-/* **********FAQS TALENT SECTION ENDS********** */
+/* **********FAQS  SECTION ENDS********** */
+
+/* **********CONTACT US  SECTION START********** */
+.contact-us {
+  background-color: #28eea7;
+}
+.contact-us > .section-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  height: 600px;
+}
+.get-directions {
+  width: 320px;
+  height: 100%;
+}
+
+.contact-container h4 {
+  color: #a5a6a9;
+}
+.contact-container {
+  background-color: #363738;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 30px 40px 40px;
+  font-size: 14px;
+  display: flex;
+  color: white;
+}
+
+.get-directions > p {
+  margin-top: auto;
+  font-size: 14px;
+  color: #a5a6a9;
+}
+.get-directions p span {
+  color: #f1f2f3;
+  font-weight: 700;
+}
+
+.form {
+  flex: 1;
+  gap: 10px;
+}
+
+.green-email {
+  font-size: 22px;
+  color: #28eea7;
+  font-weight: 900;
+}
+
+.inputs div {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.inputs {
+  display: flex;
+  width: 100%;
+}
+
+.inputs input {
+  padding: 8px 16px;
+  width: 100%;
+  margin-top: 10px;
+  height: 45px;
+}
+
+.inputs label {
+  color: #fcfcfd;
+}
+
+.radios-part {
+  margin-top: 10px;
+}
+.radios-part {
+  display: flex;
+  gap: 30px;
+}
+.textarea {
+  width: 100%;
+}
+.textarea textarea {
+  height: 120px;
+  width: 100%;
+  margin: 10px;
+}
+.submit {
+  background-color: #28eea7;
+  padding: 15px 20px;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 500;
+}
