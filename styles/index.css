@@ -296,10 +296,7 @@
 
 /* **********HELLO-WORLD SECTION START********** */
 
-.hello-world,
-.milestones,
-.programs,
-.hire-talent {
+section {
   font-family: Noto Sans Mono, sans-serif;
 
   display: flex;
@@ -311,7 +308,11 @@
 }
 
 .section-title {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  max-width: 1375px;
+
   width: 63%;
   justify-content: start;
   font-size: 36px;
@@ -462,7 +463,6 @@
 
 /* **********PROGRAMS SECTION START********** */
 .programs {
-  height: 80vh;
   width: 100%;
   background-color: #ffc635;
   display: flex;
@@ -589,18 +589,20 @@
 .hire-talent {
   background-color: #363738;
   color: #f1f2f3;
+  display: block;
 }
 .hire-talent > .section-title > .circle-colored-icons > .circle-icon-black {
   background-color: #ffffff;
 }
 
 .section-content-wrapper {
+  max-width: 1375px;
   height: 500px;
+  display: block;
   width: 63%;
-  display: flex;
-  flex-direction: column;
   gap: 35px;
-  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rec-partner {
@@ -610,6 +612,7 @@
   gap: 30px;
   background-color: #232323;
   border-radius: 25px;
+  margin: 30px 0;
 }
 
 .rec-partner p {
@@ -621,6 +624,7 @@
 
 .rec-partner p span {
   color: #28eea7;
+  font-weight: 900;
 }
 
 .rec-partner ol {
@@ -636,7 +640,6 @@
   color: white;
   text-align: end;
   background-color: #363738;
-  margin-bottom: 20px;
   font-weight: 900;
 }
 
@@ -650,10 +653,97 @@
   border-radius: 25px;
   font-size: 22px;
 }
+/* **********HIRE TALENT SECTION END********** */
 
-.quest {
-  vertical-align: middle;
+/* **********TESTIMONIALS TALENT SECTION START********** */
+.testimonials {
+  display: block;
 }
-.mini-banner > a > img {
-  object-fit: scale-down;
+
+.slider {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  display: flex;
+  background-color: #363738;
+  color: white;
+  border-radius: 25px;
+  padding: 20px 20px 20px 60px;
+  justify-content: space-between;
+  flex: 1 0 100%;
+  animation: slide 20s infinite;
+}
+@keyframes slide {
+  0%,
+  30% {
+    transform: translateX(0);
+  }
+  35%,
+  65% {
+    transform: translateX(-100%);
+  }
+  70%,
+  95% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slide-content {
+  padding: 0px 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.quotation {
+  width: 60px;
+  margin-bottom: 24px;
+}
+
+.slide-text {
+  margin-bottom: 55px;
+}
+
+.slide-profile {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.profile-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.slide-img {
+  width: 400px;
+  height: 400px;
+}
+
+.slide-img img {
+  object-fit: cover;
+}
+
+.styled-text {
+  color: #28eea7;
+  font-weight: 900;
+}
+
+.prof-loc {
+  padding-top: 5px;
 }
