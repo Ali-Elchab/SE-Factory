@@ -33,7 +33,7 @@
                         Science,
                         Full-Stack Web development, Data Engineering and UI/UX Design. Get hands-on experience and gain
                         essential skills for a successful tech career.</p>
-                    <a href="#programs" class=" get-trained-link">#GET_TRAINED</a>
+                    <a href="/#programs" class=" get-trained-link">#GET_TRAINED</a>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                 <p class="hero-right-description">Look no further than our comprehensive
                     talent matching and placement services! Our expert team will connect you with highly trained and
                     skilled developers who are ready to hit the ground running and drive your success.</p>
-                <a href="#hire" class=" hire-link">#HIRE_TALENT</a>
+                <a href="/#hire-talent" class=" hire-link">#HIRE_TALENT</a>
             </div>
         </div>
     </div>
@@ -173,7 +173,7 @@
             </div>
     </section>
 
-    <section class="programs" itemref="porgrams">
+    <section class="programs" id="programs">
         <div class="section-title">
             <div class="section-title-pointer programs-pointer">></div>
             <div class="section-title-text porgrams-text">Programs</div>
@@ -185,13 +185,13 @@
         </div>
         <div class="programs-tabs">
             <div class="tabs-links">
-                <button class="tablinks" onclick="openProgram(event, 'FCS')">FCS</button>
-                <button class="tablinks" onclick="openProgram(event, 'FSW')">FSW</button>
-                <button class="tablinks" onclick="openProgram(event, 'FCS')">FSD</button>
-                <button class="tablinks" onclick="openProgram(event, 'FCS')">UIX</button>
+                <button class="tablinks" onclick="showTab(event, 'FCS')">FCS</button>
+                <button class="tablinks" onclick="showTab(event, 'FSW')">FSW</button>
+                <button class="tablinks" onclick="showTab(event, 'FSD')">FSD</button>
+                <button class="tablinks" onclick="showTab(event, 'UIX')">UIX</button>
             </div>
 
-            <div id="FCS" class="tabcontent show">
+            <div id="FCS" class="tabcontent">
                 <div class="fcs-tab-content">
                     <h3>
                         <spam class="fcs-pointer">> FCS: </spam>Foundation of Coputer Science
@@ -205,7 +205,7 @@
                         sessions.</p>
                     <div class="fcs-buttons">
                         <div class="next-course">
-                            next course date | <spam> To be confirmed </spam>
+                            next course date | <spam class="next-course-styled"> To be confirmed </spam>
                         </div>
                         <a href="https://www.sefactory.io/fcs">LEARN MORE ></a>
                     </div>
@@ -231,7 +231,7 @@
                         learning.</p>
                     <div class="fcs-buttons">
                         <div class="next-course">
-                            next course date | <spam> To be confirmed </spam>
+                            next course date | <spam class="next-course-styled"> To be confirmed </spam>
                         </div>
                         <a href="https://www.sefactory.io/fsw">LEARN MORE ></a>
                     </div>
@@ -255,7 +255,7 @@
                         data insights.</p>
                     <div class="fcs-buttons">
                         <div class="next-course">
-                            next course date | <spam> To be confirmed </spam>
+                            next course date | <spam class="next-course-styled"> To be confirmed </spam>
                         </div>
                         <a href="https://www.sefactory.io/fsd">LEARN MORE ></a>
                     </div>
@@ -279,7 +279,7 @@
                         design.</p>
                     <div class="fcs-buttons">
                         <div class="next-course">
-                            next course date | <spam> To be confirmed </spam>
+                            next course date | <spam class="next-course-styled"> To be confirmed </spam>
                         </div>
                         <a href="https://www.sefactory.io/uix">LEARN MORE ></a>
                     </div>
@@ -491,9 +491,11 @@
                     Please, find the description for each program below
                 </div>
             </div>
-            <div class="faq-view-all">
-                VIEW ALL >
-            </div>
+            <a class="view-all" href="https://www.sefactory.io/faqs">
+                <div class="faq-view-all">
+                    VIEW ALL >
+                </div>
+            </a>
         </div>
     </section>
 
@@ -693,7 +695,7 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="./scripts/index.js"></script>
 </body>
 

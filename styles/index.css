@@ -479,7 +479,6 @@
 }
 .programs-tabs {
   width: 63%;
-
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -494,13 +493,14 @@
 
 .tabs-links button {
   background-color: transparent;
-  border: none;
+  border: 0;
   cursor: pointer;
   padding: 20px 50px;
   font-size: 16px;
   font-weight: 900;
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  color: #fcfcfd;
 }
 
 .tabs-links button.active {
@@ -569,10 +569,6 @@
 
 .tabcontent {
   display: none;
-}
-
-.show {
-  display: flex;
 }
 /* **********PROGRAMS SECTION END********** */
 
@@ -781,13 +777,19 @@
   list-style-position: inside;
   padding-left: 20px;
 }
+.faqs > .section-content-wrapper a {
+  text-decoration: none;
+}
 
 .faq-view-all {
   background-color: #232323;
+  color: #f1f2f3;
+  text-decoration: none;
   padding: 15px 20px;
   margin-top: 24px;
   text-align: end;
   font-weight: 900;
+  cursor: pointer;
 }
 /* **********FAQS  SECTION ENDS********** */
 
