@@ -326,7 +326,6 @@
   margin-right: auto;
   display: flex;
   max-width: 1375px;
-
   width: 63%;
   justify-content: start;
   font-size: 36px;
@@ -975,6 +974,8 @@
   color: #fcfcfd;
 }
 /* **********SUBSCRIBE SECTION ENDS********** */
+
+/* **********FOOTER SECTION STARTS********** */
 .footer {
   background-color: #232323;
   color: white;
@@ -1034,8 +1035,13 @@
   text-decoration: none;
   font-size: 14px;
 }
+.hiring-portals {
+  display: none;
+}
+/* **********FOOTER SECTION ENDS********** */
 
-@media screen and (max-width: 780px) {
+/* **********MEDIA QUERIES********** */
+@media screen and (max-width: 750px) {
   .hero-section {
     flex-direction: column;
     height: auto;
@@ -1043,9 +1049,8 @@
   .hero-left,
   .hero-right {
     width: 100%;
-    height: 60vh; /* Adjust height as needed */
+    height: 60vh;
   }
-
   .color-overlay,
   .hero-left-content-wrapper,
   .hero-right-content-wrapper {
@@ -1059,7 +1064,6 @@
   .h1-cursor {
     width: 100%;
   }
-
   .hero-left-description,
   .hero-right-description {
     width: 100%;
@@ -1081,14 +1085,166 @@
   .menu-nav {
     align-items: center;
   }
-
   .menu-container {
     padding: 35px;
   }
-
   .menu-content {
     width: 100%;
   }
-  .menu-signUp {
+  .section-title {
+    width: 100%;
+    top: 10px;
+    padding: 10px 20px;
+    font-size: 24px;
+  }
+  .section-title-text {
+    font-size: 18px;
+    padding: 0px 0px 0px 20px;
+  }
+  .circle-icon-black,
+  .circle-icon-grey,
+  .circle-icon-green {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  section {
+    padding: 30px 0;
+  }
+  .youtube {
+    width: 80%;
+    height: 200px;
+    border: 10px solid #28eea7;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  .youtube iframe {
+    object-fit: fill;
+  }
+  .milestones {
+    height: auto;
+    background-color: #ffffff;
+    padding: 30px;
+  }
+  .milestones-stat-container {
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .milestone-left {
+    width: 100%;
+    padding: 30px 40px;
+    gap: 5px;
+  }
+  .suc-percent {
+    font-size: 42px;
+  }
+  .suc-text {
+    font-size: 14px;
+  }
+  .text-list {
+    font-size: 12px;
+  }
+  .milestone-right {
+    width: 100%;
+    gap: 10px;
+  }
+  .milestone-right-top,
+  .milestone-right-bottom {
+    gap: 10px;
+  }
+  .youth-trained,
+  .countries,
+  .graduated,
+  .companies {
+    padding: 30px 15px;
+  }
+  .num {
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .txt {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hiring-portals {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .fsw,
+  .portal {
+    margin: 7px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("https://assets-global.website-files.com/63e3828f575098222357ad70/64ad72a3008c1bf15de71268_Frame-92-p-1080.png");
+    background-size: contain;
+    border: 10px solid #28eea7;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .portals h4 {
+    font-size: 13px;
+    color: #a5a6a9;
+  }
+  .portals h2 {
+    font-size: 30px;
+    color: #28eea7;
+  }
+  .portal-includes {
+    font-size: 10px;
+    margin-top: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portal-includes p {
+    padding: 5px 10px;
+    width: fit-content;
+    display: flex;
+    margin: 0 5px 10px 0;
+    background-color: #28eea7;
+    color: #000000;
+    font-weight: 800;
+    border-radius: 6px;
+  }
+  .portals a {
+    width: 100%;
+    display: block;
+    text-align: end;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 6px;
+    font-weight: 800;
+  }
+
+  .fsd {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("https://assets-global.website-files.com/63e3828f575098222357ad70/648ae6ab60a6ff58e7f5c83d_fsd.png");
+    background-size: cover;
+    border: 10px solid #9864da;
+  }
+  .fsd h2 {
+    color: #9864da;
+  }
+  .fsd p {
+    background-color: #9864da;
+    color: white;
+  }
+  .uix {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("https://assets-global.website-files.com/63e3828f575098222357ad70/648ae6ac6c902afee33f9630_uix-p-500.png");
+    background-size: cover;
+    border: 10px solid #fb508e;
+  }
+  .uix h2 {
+    color: #fb508e;
+  }
+  .uix p {
+    background-color: #fb508e;
+    color: white;
   }
 }

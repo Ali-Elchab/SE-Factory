@@ -32,7 +32,6 @@ body {
 
 section,
 footer {
-  min-width: 750;
   font-family: Noto Sans Mono, sans-serif;
   display: flex;
   flex-direction: column;
