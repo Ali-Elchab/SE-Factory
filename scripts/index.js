@@ -2,9 +2,45 @@ let menuButton = document.querySelector("#hamburger-menu");
 let menu = document.querySelector(".menu-container");
 let exitMenu = document.querySelector("#exit-menu");
 let menuLinks = document.querySelectorAll(".link-menu-item");
+let faqs = document.querySelectorAll(".faq-dropdown");
+const sentenceElement = document.querySelector(".transition-h1");
 
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".tabs-links button:nth-child(1)").click();
+
+  const sentences = ["SOFTWARE DEVELOPER?", "UI/UX DESIGNER?", "DATA ENGINEER?"];
+  let currentIndex = 0;
+  let offset = 0;
+  let forwards = true;
+  let skipCount = 0;
+  const skipDelay = 16;
+  const speed = 100;
+
+  const updateSentence = () => {
+    sentenceElement.textContent = sentences[currentIndex].substring(0, offset);
+  };
+
+  const handleAnimation = () => {
+    if (forwards) {
+      if (offset >= sentences[currentIndex].length) {
+        if (++skipCount === skipDelay) {
+          forwards = false;
+          skipCount = 0;
+        }
+      }
+    } else if (offset === 0) {
+      forwards = true;
+      currentIndex = (currentIndex + 1) % sentences.length;
+    }
+
+    if (skipCount === 0) {
+      forwards ? offset++ : offset--;
+    }
+
+    updateSentence();
+  };
+
+  setInterval(handleAnimation, speed);
 });
 menuButton.addEventListener("click", () => {
   menu.style.cssText = "display:flex;";
@@ -57,3 +93,14 @@ function showTab(evt, program) {
     toBeConfirmed.style.cssText = "color:#fb508e;";
   }
 }
+
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    const answer = faq.querySelector(".faq-answer");
+    if (answer.style.display === "none" || answer.style.display === "") {
+      answer.style.display = "block";
+    } else {
+      answer.style.display = "none";
+    }
+  });
+});

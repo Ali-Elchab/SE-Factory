@@ -21,7 +21,7 @@
 .color-overlay {
   background-color: rgba(40, 238, 167, 0.93);
   height: 100%;
-  animation: changeColor 14s infinite ease-in-out;
+  animation: changeColor 15s infinite ease-in-out;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -72,11 +72,36 @@
   background-color: #363738;
   line-height: 1.5;
 }
-
+.animated-text {
+  position: flex;
+  flex-direction: row;
+  padding: 15px 0 0 0;
+}
 .transition-h1,
+.h1-cursor {
+  font-size: 36px;
+  position: relative;
+}
+
 .question {
   font-size: 36px;
   padding: 15px 0 0 0;
+}
+
+.transition-h1::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .hero-left-description,
@@ -172,7 +197,6 @@
   background-color: #232323e6;
   z-index: 99;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -182,7 +206,6 @@
   height: auto;
   padding-top: 50px;
   margin: auto;
-  flex-wrap: wrap;
 }
 .menu-links {
   display: flex;
@@ -1010,4 +1033,62 @@
   color: #a5a6a9;
   text-decoration: none;
   font-size: 14px;
+}
+
+@media screen and (max-width: 780px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    height: 60vh; /* Adjust height as needed */
+  }
+
+  .color-overlay,
+  .hero-left-content-wrapper,
+  .hero-right-content-wrapper {
+    padding: 40px;
+    width: 80%;
+  }
+  .color-overlay {
+    width: 100%;
+  }
+  .transition-h1,
+  .h1-cursor {
+    width: 100%;
+  }
+
+  .hero-left-description,
+  .hero-right-description {
+    width: 100%;
+  }
+  .nav-components {
+    width: 90%;
+    top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 15px;
+  }
+  .header-logo {
+    width: 120px;
+  }
+  .hamburger-menu {
+    width: 35px;
+    height: 35px;
+  }
+  .menu-nav {
+    align-items: center;
+  }
+
+  .menu-container {
+    padding: 35px;
+  }
+
+  .menu-content {
+    width: 100%;
+  }
+  .menu-signUp {
+  }
 }
