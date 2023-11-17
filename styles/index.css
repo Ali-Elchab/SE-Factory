@@ -1323,10 +1323,71 @@
 }
 
 @media screen and (max-width: 480px) {
-  .hiring-portals {
-    display: flex;
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left-content-wrapper,
+  .hero-right-content-wrapper {
+    padding: 30px 10px;
+    width: 100%;
+    margin: 20px 20px 0 20px;
+  }
+  .transition-h1,
+  .h1-cursor,
+  .question {
+    font-size: 28px;
+  }
+  .hero-left-description,
+  .hero-right-description {
+    font-size: 14px;
+  }
+  .menu-nav {
+    align-items: start;
+    height: 30px;
+    width: 100%;
+    top: 30px;
+    bottom: auto;
+    left: 0%;
+    padding: 0px 20px;
+  }
+  .menu-container {
+    padding: 35px;
+    justify-content: start;
+    overflow-y: scroll;
+  }
+  .menu-content {
+    width: 100%;
+    margin: 20px 0;
     flex-direction: column;
-    padding: 10px 20px;
+  }
+  .menu-links {
+    position: relative;
+    align-items: center;
+  }
+  .menu-signUp {
+    padding: 20px;
+    width: 100%;
+    margin: 30px 0;
+  }
+  .login-link,
+  .signup-link {
+    padding: 5px 10px;
+  }
+  .hr-factory {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .hr-ad-content {
+    padding: 0px 0 0 10px;
+    gap: 10px;
+  }
+
+  .hr-content-title {
+    width: 100%;
+    font-size: 16px;
   }
 
   .fsw,
